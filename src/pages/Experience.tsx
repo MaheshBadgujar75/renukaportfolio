@@ -24,21 +24,21 @@ const itemVariants = {
 export default function Experience() {
   return (
     <PageWrapper>
-      <div className="w-full max-w-full block mx-auto px-6 md:px-12 py-24 overflow-x-clip">
+      <div className="w-full max-w-full block mx-auto px-4 md:px-12 py-16 md:py-24 overflow-x-clip">
         
         {/* Asymmetrical Split-Layout Hero */}
-        <div className="flex flex-col lg:flex-row gap-16 lg:gap-12 items-start justify-between mb-24 relative z-10 border-b border-white/5 pb-20">
-          <div className="flex-1 shrink-0 lg:max-w-2xl">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-12 items-start justify-between mb-16 md:mb-24 relative z-10 border-b border-white/5 pb-16 md:pb-20">
+          <div className="flex-1 shrink-0 lg:max-w-2xl text-left">
             <motion.h1 
               variants={containerVariants}
               initial="hidden"
               animate="visible"
-              className="text-6xl md:text-8xl lg:text-[7rem] font-display font-black tracking-tighter leading-[0.85] uppercase flex flex-col items-start text-left"
+              className="text-5xl md:text-8xl lg:text-[7rem] font-display font-black tracking-tighter leading-[0.9] md:leading-[0.85] uppercase flex flex-col items-start text-left"
             >
-              <span className="overflow-hidden inline-block pb-2 pr-8">
+              <span className="overflow-hidden inline-block pb-1 md:pb-2">
                 <motion.span variants={itemVariants} className="inline-block origin-bottom-left">MY</motion.span>
               </span>
-              <span className="overflow-hidden inline-block pb-2 pr-8">
+              <span className="overflow-hidden inline-block pb-1 md:pb-2">
                 <motion.span variants={itemVariants} className="inline-block origin-bottom-left">
                   <span className="text-gradient">EXPERIENCE</span><span className="text-accent">.</span>
                 </motion.span>
@@ -50,9 +50,9 @@ export default function Experience() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="flex-1 lg:max-w-xl relative mt-4 lg:mt-12 text-left"
+            className="flex-1 lg:max-w-xl relative mt-4 md:mt-8 lg:mt-12 text-left"
           >
-            <p className="text-2xl text-muted-foreground leading-relaxed font-medium relative z-10">
+            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed font-medium relative z-10">
               A track record of delivering high-quality design solutions across various industries and projects.
             </p>
           </motion.div>
